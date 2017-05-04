@@ -1,0 +1,8 @@
+{
+    "feature.calendarIntegration.enabled": true,
+    "feature.offerYourShift.enabled": true,
+    "feature.dropShift.enabled": true,
+    "feature.shiftSwapRequestScreen.enabled": true,
+    "feature.appsee.enabled": false,
+    "feature.legalScreens.enabled": true
+}

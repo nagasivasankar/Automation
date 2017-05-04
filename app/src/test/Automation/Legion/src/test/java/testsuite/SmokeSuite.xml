@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SmokeSuite" verbose="1">
+
+	<test name="SmokeRegistration">
+		<classes>
+ 	  		<class name="testscripts.LoginScreenTest" />
+			<class name="testscripts.HomeScreenTest" />
+			<class name="testscripts.MyProfileTest" />  
+		<!-- 	<class name="testscripts.ScheduleOverviewTest" />
+			<class name="testscripts.WhenIPrefertoWorkTest" />
+			<class name="testscripts.WhenImBusyTest" />
+			<class name="testscripts.HowIPreferToWorkTest" />
+			<class name="testscripts.WhatsImportantToMe" />
+			<class name="testscripts.NavigationsTest" />
+			<class name="testscripts.ShiftOffersTest" /> -->
+		</classes>
+	</test>
+</suite>

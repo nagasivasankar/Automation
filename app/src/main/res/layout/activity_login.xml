@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_loginback"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/topSection"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:gravity="top"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/legionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.65"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#A6FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="0.4"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/emailLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/usernameET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/usernameStatusImage"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@string/mallory_book"
+                        android:hint="Username"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="100"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:singleLine="true"
+                        android:tag="@string/mallory_book"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textSize="@dimen/large_textsize" />
+
+                    <ImageButton
+                        android:id="@+id/usernameStatusImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="3dp"
+                        android:background="@android:color/transparent"
+                        android:paddingBottom="20dp"
+                        android:src="@drawable/ic_confirm"
+                        android:visibility="gone" />
+
+                    <View
+                        android:id="@+id/emailView"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/usernameET"
+                        android:background="@color/colorGrey" />
+
+                    <TextView
+                        android:id="@+id/usernameErrorText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/usernameET"
+                        android:layout_marginTop="3dp"
+                        android:tag="@string/mallory_book"
+                        android:textColor="@color/errorRedColor"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/passwordLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/emailLayout">
+
+                    <EditText
+                        android:id="@+id/passwordEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/passwordStatusImage"
+                        android:layout_toStartOf="@+id/passwordStatusImage"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@string/mallory_book"
+                        android:hint="@string/password"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:singleLine="true"
+                        android:tag="@string/mallory_book"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textSize="@dimen/large_textsize" />
+
+                    <ImageView
+                        android:id="@+id/passwordStatusImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:paddingBottom="20dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_confirm"
+                        android:visibility="gone" />
+
+                    <View
+                        android:id="@+id/passwordView"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/passwordEditText"
+                        android:background="@color/colorGrey" />
+
+                    <TextView
+                        android:id="@+id/passwordErrorText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/passwordEditText"
+                        android:layout_marginTop="3dp"
+                        android:tag="@string/mallory_book"
+                        android:textColor="@color/errorRedColor"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/passwordLayout"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_button_shape"
+                    android:gravity="center"
+                    android:tag="@string/mallory_book"
+                    android:text="@string/login"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/forgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/login"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:tag="@string/mallory_book"
+                    android:text="@string/forgot_password"
+                    android:textColor="@color/forgotpwdColor"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/login"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:tag="@string/mallory_book"
+                        android:text="Don't have an account?"
+                        android:textColor="@color/slider_bubble_color"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/createAccountTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/login"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:tag="@string/mallory_book"
+                        android:text=" Create account."
+                        android:textColor="@color/forgotpwdColor"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/termofuse"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:lineSpacingExtra="3dp"
+                    android:tag="@string/mallory_book"
+                    android:textColorHighlight="#B5B2AB"
+                    android:textColor="#4c4a48"
+                    android:textColorLink="#4c4a48"
+                    android:text="@string/terms"
+                    android:textAppearance="?android:textAppearanceSmall" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

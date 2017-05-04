@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_inbox_image"
+    android:orientation="vertical">
+
+    <!-- <include
+         layout="@layout/home_toolbar_layout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="3.5"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:tag="@string/mallory_book_regular"
+        android:text="COMING SOON..."
+        android:textColor="@color/white"
+        android:textSize="@dimen/bigger_textsize" />
+
+    <TextView
+        android:id="@+id/comingSoonTV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="4"
+        android:background="#D9FFFFFF"
+        android:gravity="center"
+        android:padding="30dp"
+        android:tag="@string/mallory_light"
+        android:text="Your Inbox stores messages and notifications you receive about your weekly schedules, specific shifts and store locations. \n\n\nStay informed of the latest work news without having to go in on your day off."
+        android:textAllCaps="false"
+        android:textColor="#212121"
+        android:textSize="@dimen/bigger_textsize" />
+</LinearLayout>

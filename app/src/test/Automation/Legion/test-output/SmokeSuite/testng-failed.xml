@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SmokeSuite]">
+  <test name="SmokeRegistration">
+    <classes>
+      <class name="testscripts.LoginScreenTest"/>
+      <class name="testscripts.HomeScreenTest"/>
+      <class name="testscripts.MyProfileTest"/>
+    </classes>
+  </test> <!-- SmokeRegistration -->
+  <test name="SmokeRegistration(failed)">
+    <classes>
+      <class name="testscripts.HomeScreenTest">
+        <methods>
+          <include name="startServer"/>
+          <include name="result"/>
+          <include name="login"/>
+          <include name="teardown"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- testscripts.HomeScreenTest -->
+      <class name="testscripts.LoginScreenTest">
+        <methods>
+          <include name="login" invocation-numbers="1"/>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+          <include name="startServer"/>
+          <include name="result"/>
+        </methods>
+      </class> <!-- testscripts.LoginScreenTest -->
+      <class name="testscripts.MyProfileTest">
+        <methods>
+          <include name="result"/>
+          <include name="myProfile" invocation-numbers="2"/>
+          <include name="startServer"/>
+          <include name="tearDown"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- testscripts.MyProfileTest -->
+    </classes>
+  </test> <!-- SmokeRegistration(failed) -->
+</suite> <!-- Failed suite [SmokeSuite] -->

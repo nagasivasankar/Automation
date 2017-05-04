@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/iv_picSquareIV"
+            android:layout_width="@dimen/pic_height"
+            android:layout_height="@dimen/pic_height"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:tag="@string/mallory_book"
+            android:src="@drawable/legion_stage_launcher" />
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:id="@+id/leadIv"
+            android:layout_gravity="right|bottom" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayoutCircIv"
+        android:layout_gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_picCircleIv"
+            android:layout_width="@dimen/pic_height"
+            android:layout_height="@dimen/pic_height"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            app:civ_border_color="@color/light_black"
+            app:civ_border_width="1dp" />
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:id="@+id/leadIvCircular"
+            android:layout_gravity="right|bottom" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:tag="@string/mallory_mediuem"
+        android:text="NOTES"
+        android:textColor="#555A61"
+        android:textSize="@dimen/small_textsize" />
+
+</LinearLayout>

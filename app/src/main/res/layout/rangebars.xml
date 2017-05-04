@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_gray_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/hoursweekTextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:tag="@string/mallory_mediuem"
+                android:text="@string/hoursWeeks"
+                android:textAllCaps="true"
+                android:textColor="@color/slider_bubble_color"
+                android:textSize="@dimen/small_textsize" />
+
+            <TextView
+                android:id="@+id/hoursWeekCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textAllCaps="true"
+                android:paddingRight="15dp"
+                android:tag="@string/mallory_mediuem"
+                android:textColor="@color/blue_color"
+                android:textSize="@dimen/small_textsize" />
+
+        </LinearLayout>
+
+        <com.edmodo.rangebar.RangeBar xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/hoursWeekCountSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            custom:barColor="@color/light_gray"
+            custom:barWeight="5dp"
+            custom:connectingLineColor="@color/blue_color"
+            custom:connectingLineWeight="2dp"
+            custom:thumbImageNormal="@drawable/slider_control"
+            custom:thumbImagePressed="@drawable/slider_control"
+            custom:tickCount="41"
+            custom:tickHeight="0dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:paddingLeft="10dp"
+                android:tag="@string/mallory_book"
+                android:text="0"
+                android:textColor="#BCC0C8"
+                android:textSize="@dimen/medium_textsize" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:tag="@string/mallory_book"
+                android:text="10"
+                android:textColor="#BCC0C8"
+                android:textSize="@dimen/medium_textsize" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:tag="@string/mallory_book"
+                android:text="20"
+                android:textColor="#BCC0C8"
+                android:textSize="@dimen/medium_textsize" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:tag="@string/mallory_book"
+                android:text="30"
+                android:textColor="#BCC0C8"
+                android:textSize="@dimen/medium_textsize" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="7dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="5dp"
+                android:tag="@string/mallory_book"
+                android:text="40"
+                android:textColor="#BCC0C8"
+                android:textSize="@dimen/medium_textsize" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_white_boarder"
+        android:gravity="center"
+        android:layout_marginLeft="0.4dp"
+        android:layout_marginRight="0.4dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/shiftLenghtTextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:tag="@string/mallory_mediuem"
+                android:text="@string/shiftLength"
+                android:textAllCaps="true"
+                android:textColor="@color/slider_bubble_color"
+                android:textSize="@dimen/small_textsize" />
+
+            <TextView
+                android:id="@+id/shiftCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textAllCaps="true"
+                android:paddingRight="15dp"
+                android:tag="@string/mallory_mediuem"
+                android:textColor="@color/blue_color"
+                android:textSize="@dimen/small_textsize" />
+        </LinearLayout>
+
+        <com.edmodo.rangebar.RangeBar xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/shiftLengthSeekbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            custom:barColor="@color/light_gray"
+            custom:barWeight="5dp"
+            custom:connectingLineColor="@color/blue_color"
+            custom:connectingLineWeight="2dp"
+            custom:thumbImageNormal="@drawable/slider_control"
+            custom:thumbImagePressed="@drawable/slider_control"
+            custom:tickCount="7"
+            custom:tickHeight="0dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:weightSum="6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:paddingLeft="5dp"
+                android:tag="@string/mallory_book"
+                android:text="2"
+                android:textColor="#BCC0C8"
+                android:textSize="@dimen/medium_textsize" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:tag="@string/mallory_book"
+                android:text="3"
+                android:textColor="#BCC0C8"
+                android:textSize="@dimen/medium_textsize" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:tag="@string/mallory_book"
+                android:text="4"
+                android:textColor="#BCC0C8"
+                android:textSize="@dimen/medium_textsize" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:tag="@string/mallory_book"
+                android:text="5"
+                android:textColor="#BCC0C8"
+                android:textSize="@dimen/medium_textsize" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:tag="@string/mallory_book"
+                android:text="6"
+                android:textColor="#BCC0C8"
+                android:textSize="@dimen/medium_textsize" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:tag="@string/mallory_book"
+                android:text="7"
+                android:textColor="#BCC0C8"
+                android:textSize="@dimen/medium_textsize" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="5dp"
+                android:tag="@string/mallory_book"
+                android:text="8"
+                android:textColor="#BCC0C8"
+                android:textSize="@dimen/medium_textsize" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/shiftWeekTextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:tag="@string/mallory_mediuem"
+                android:text="SHIFTS/WEEK"
+                android:textAllCaps="true"
+                android:textColor="@color/slider_bubble_color"
+                android:textSize="@dimen/small_textsize" />
+
+            <TextView
+                android:id="@+id/shiftWeekCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="15dp"
+                android:tag="@string/mallory_mediuem"
+                android:textAllCaps="true"
+                android:textColor="@color/blue_color"
+                android:textSize="@dimen/small_textsize" />
+        </LinearLayout>
+
+        <com.edmodo.rangebar.RangeBar xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/shiftWeekSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            custom:barColor="@color/light_gray"
+            custom:barWeight="5dp"
+            custom:connectingLineColor="@color/blue_color"
+            custom:connectingLineWeight="2dp"
+            custom:thumbImageNormal="@drawable/slider_control"
+            custom:thumbImagePressed="@drawable/slider_control"
+            custom:tickCount="11"
+            custom:tickHeight="0dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:paddingLeft="10dp"
+                android:tag="@string/mallory_book"
+                android:text="0"
+                android:textColor="#BCC0C8"
+                android:textSize="@dimen/medium_textsize" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="1dp"
+                android:tag="@string/mallory_book"
+                android:text="1"
+                android:textColor="#BCC0C8"
+                android:textSize="@dimen/medium_textsize" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="2dp"
+                android:tag="@string/mallory_book"
+                android:text="2"
+                android:textColor="#BCC0C8"
+                android:textSize="@dimen/medium_textsize" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="4dp"
+                android:tag="@string/mallory_book"
+                android:text="3"
+                android:textColor="#BCC0C8"
+                android:textSize="@dimen/medium_textsize" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="5dp"
+                android:tag="@string/mallory_book"
+                android:text="4"
+                android:textColor="#BCC0C8"
+                android:textSize="@dimen/medium_textsize" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="6dp"
+                android:tag="@string/mallory_book"
+                android:text="5"
+                android:textColor="#BCC0C8"
+                android:textSize="@dimen/medium_textsize" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="7dp"
+                android:tag="@string/mallory_book"
+                android:text="6"
+                android:textColor="#BCC0C8"
+                android:textSize="@dimen/medium_textsize" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:tag="@string/mallory_book"
+                android:text="7"
+                android:textColor="#BCC0C8"
+                android:textSize="@dimen/medium_textsize" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:tag="@string/mallory_book"
+                android:text="8"
+                android:textColor="#BCC0C8"
+                android:textSize="@dimen/medium_textsize" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:tag="@string/mallory_book"
+                android:text="9"
+                android:textColor="#BCC0C8"
+                android:textSize="@dimen/medium_textsize" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="7dp"
+                android:tag="@string/mallory_book"
+                android:text="10"
+                android:textColor="#BCC0C8"
+                android:textSize="@dimen/medium_textsize" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

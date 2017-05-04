@@ -1,0 +1,44 @@
+<resources>
+
+
+    <dimen name="smallest_textsize">13sp</dimen>
+    <dimen name="smaller_textsize">14sp</dimen>
+    <dimen name="small_textsize">15sp</dimen>
+    <dimen name="medium_below_textsize">16sp</dimen>
+    <dimen name="medium_textsize">17sp</dimen>
+    <dimen name="medium_above_textsize">18sp</dimen>
+    <dimen name="big_textsize">19sp</dimen>
+    <dimen name="bigger_textsize">20sp</dimen>
+    <dimen name="biggest_textsize">21sp</dimen>
+    <dimen name="bigger_than_biggest_textsize">22sp</dimen>
+    <dimen name="large_textsize">23sp</dimen>
+    <dimen name="larger_text_size">24sp</dimen>
+    <dimen name="largest_text_size">25sp</dimen>
+    <dimen name="editext_width">330dp</dimen>
+    <dimen name="signin_button_width">350dp</dimen>
+    <dimen name="nav_drawer_width">300dp</dimen>
+    <dimen name="getPasscodeButtonWidth">300dp</dimen>
+    <dimen name="skip_btn_height">55dp</dimen>
+    <dimen name="profile_pic_width_height">120dp</dimen>
+    <dimen name="chip_layout_height">70dp</dimen>
+    <dimen name="margin_for_camera">8dp</dimen>
+    <dimen name="tab_min_width">200dp</dimen>
+    <dimen name="pkg_details_list_item_height">60dp</dimen>
+    <dimen name="camera_icon_height">80dp</dimen>
+    <dimen name="progressbar_width_height">30dp</dimen>
+    <dimen name="close_image">24dp</dimen>
+    <dimen name="arrow_size">21dp</dimen>
+    <dimen name="shift_orders_margins">45dp</dimen>
+    <dimen name="very_large_text_size">35sp</dimen>
+    <dimen name="vertical_bar_height">23dp</dimen>
+
+    <dimen name="wheel_picker_height">250dp</dimen>
+    <dimen name="dialog_padding">20dp</dimen>
+    <dimen name="profile_pic">100sp</dimen>
+
+    <dimen name="image_height_shift_details">200dp</dimen>
+    <dimen name="linear_height_shift_details">50dp</dimen>
+    <dimen name="offer_your_shift_btn_width">250dp</dimen>
+    <dimen name="horizontal_list_height">150dp</dimen>
+    <dimen name="pic_height">60dp</dimen>
+</resources>

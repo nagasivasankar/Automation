@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_shift_offers_image"
+    android:orientation="vertical">
+
+    <!--<include
+        layout="@layout/shift_offers_toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/dropdown_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@null" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shift_offers_tabs_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_call_outs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.3"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:tag="@string/mallory_mediuem"
+            android:text="@string/callouts"
+            android:textColor="@color/dark_purple"
+            android:background="@color/light_white"
+            android:textSize="@dimen/medium_below_textsize" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/light_gray" />
+
+        <TextView
+            android:id="@+id/tv_swaps"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:tag="@string/mallory_mediuem"
+            android:text="@string/swaps"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/medium_below_textsize" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/light_gray" />
+
+
+        <TextView
+            android:id="@+id/tv_open_shifts"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:tag="@string/mallory_mediuem"
+            android:text="@string/open_shifts"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/medium_below_textsize" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/light_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear_no_shifts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_no_shifts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_no_shifts_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/shift_orders_margins"
+                android:layout_marginRight="@dimen/shift_orders_margins"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:tag="@string/mallory_book"
+                android:text="There are no available shift swaps right now."
+                android:textColor="@color/hint_color"
+                android:textSize="@dimen/big_textsize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/shift_orders_margins"
+                android:layout_marginRight="@dimen/shift_orders_margins"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:tag="@string/mallory_book"
+                android:text="Please check back later."
+                android:textColor="@color/hint_color"
+                android:textSize="@dimen/big_textsize" />
+
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swiperefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/listView_shifts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="10dp" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    </LinearLayout>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="3.5"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:tag="@string/mallory_book_regular"
+        android:text="COMING SOON..."
+        android:textColor="#383838"
+        android:textSize="@dimen/bigger_textsize" />
+
+    <TextView
+        android:id="@+id/comingSoonTV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="4"
+        android:background="#D9FFFFFF"
+        android:gravity="center"
+        android:padding="30dp"
+        android:tag="@string/mallory_light"
+        android:text="Your Inbox stores messages and notifications you receive about your weekly schedules, specific shifts and store locations. \n\n\nStay informed of the latest work news without having to go in on your day off."
+        android:textAllCaps="false"
+        android:textColor="#212121"
+        android:textSize="@dimen/bigger_textsize" />
+
+</LinearLayout>

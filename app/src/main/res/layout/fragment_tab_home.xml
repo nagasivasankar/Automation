@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home_morning_back"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/home_toolbar_layout"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dayWishesTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginTop="30dp"
+            android:singleLine="true"
+            android:tag="@string/mallory_light"
+            android:text="Good Afternoon,"
+            android:textColor="@color/textViewColor"
+            android:textSize="@dimen/large_textsize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/todayTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="@string/mallory_book_regular"
+            android:text="It's Tuesday"
+            android:textColor="@color/textViewColor"
+            android:textSize="@dimen/big_textsize" />
+
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/shift_day_with_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:tag="@string/mallory_book_regular"
+        android:text="tomorrow at 5:00am."
+        android:textColor="@color/textViewColor"
+        android:textSize="@dimen/big_textsize" />
+
+    <TextView
+        android:id="@+id/noShiftsTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:tag="@string/mallory_book_regular"
+        android:text="You have no pending items."
+        android:textColor="@color/textViewColor"
+        android:textSize="@dimen/big_textsize"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/graphContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_graph_top_bar"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="-40dp"
+            android:paddingRight="-40dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/prevDay4TimeTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#CC1B1717"
+                android:textSize="@dimen/medium_below_textsize" />
+
+            <TextView
+                android:id="@+id/prevDay3TimeTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0hr"
+                android:textColor="#CC1B1717"
+                android:textSize="@dimen/medium_below_textsize" />
+
+            <TextView
+                android:id="@+id/prevDay2TimeTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0hr"
+                android:textColor="#CC1B1717"
+                android:textSize="@dimen/medium_below_textsize" />
+
+            <TextView
+                android:id="@+id/prevDay1TimeTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0hr"
+                android:textColor="#CC1B1717"
+                android:textSize="@dimen/medium_below_textsize" />
+
+            <TextView
+                android:id="@+id/currentDayTimeTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0hr"
+                android:textColor="#0A0909"
+                android:textSize="@dimen/medium_below_textsize" />
+
+            <TextView
+                android:id="@+id/nextDay1TimeTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0hr"
+                android:textColor="#CC1B1717"
+                android:textSize="@dimen/medium_below_textsize" />
+
+            <TextView
+                android:id="@+id/nextDay2TimeTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0hr"
+                android:textColor="#CC1B1717"
+                android:textSize="@dimen/medium_below_textsize" />
+
+            <TextView
+                android:id="@+id/nextDay3TimeTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0hr"
+                android:textColor="#CC1B1717"
+                android:textSize="@dimen/medium_below_textsize" />
+
+            <TextView
+                android:id="@+id/nextDay4TimeTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#CC1B1717"
+                android:textSize="@dimen/medium_below_textsize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="#66FFFFFF"
+            android:gravity="bottom"
+            android:paddingLeft="-30dp"
+            android:paddingRight="-30dp">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/graphView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="-4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_graph_bottom_bar"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="-40dp"
+            android:paddingRight="-40dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/prevDay4TV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#1B1717"
+                android:textSize="@dimen/medium_below_textsize" />
+
+            <TextView
+                android:id="@+id/prevDay3TV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="T\n13"
+                android:textColor="#1B1717"
+                android:textSize="@dimen/medium_below_textsize" />
+
+            <TextView
+                android:id="@+id/prevDay2TV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="W\n14"
+                android:textColor="#1B1717"
+                android:textSize="@dimen/medium_below_textsize" />
+
+            <TextView
+                android:id="@+id/prevDay1TV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="T\n15"
+                android:textColor="#1B1717"
+                android:textSize="@dimen/medium_below_textsize" />
+
+            <TextView
+                android:id="@+id/currentDayTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/bg_circle_current_day"
+                android:gravity="center"
+                android:text="F\n16"
+                android:textColor="#1B1717"
+                android:textSize="@dimen/medium_below_textsize" />
+
+            <TextView
+                android:id="@+id/nextDay1TV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="S\n17"
+                android:textColor="#1B1717"
+                android:textSize="@dimen/medium_below_textsize" />
+
+            <TextView
+                android:id="@+id/nextDay2TV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="S\n18"
+                android:textColor="#1B1717"
+                android:textSize="@dimen/medium_below_textsize" />
+
+            <TextView
+                android:id="@+id/nextDay3TV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="M\n19"
+                android:textColor="#CC1B1717"
+                android:textSize="@dimen/medium_below_textsize" />
+
+            <TextView
+                android:id="@+id/nextDay4TV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#CC1B1717"
+                android:textSize="@dimen/medium_below_textsize" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/schedulesBoxLL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bg_count"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/schedule_count_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:tag="@string/mallory_medium_regular"
+                android:text="0"
+                android:textColor="#1B1717"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:tag="@string/mallory_book_regular"
+                android:text="@string/schedules"
+                android:textColor="#1B1717"
+                android:textSize="@dimen/small_textsize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/messagesBoxLL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_count"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/messages_count_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:tag="@string/mallory_medium_regular"
+                android:text="0"
+                android:textColor="#1B1717"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:tag="@string/mallory_book_regular"
+                android:text="@string/messages"
+                android:textColor="#1B1717"
+                android:textSize="@dimen/small_textsize" />
+        </LinearLayout>
+
+         <LinearLayout
+            android:id="@+id/shiftOffersBoxLL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_count"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/shift_offers_count_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:tag="@string/mallory_medium_regular"
+                android:text="0"
+                android:textColor="#1B1717"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:tag="@string/mallory_book_regular"
+                android:text="@string/shift_offers"
+                android:textColor="#1B1717"
+                android:textSize="@dimen/small_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

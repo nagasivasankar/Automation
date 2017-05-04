@@ -1,0 +1,32 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="smallest_textsize">9sp</dimen>
+    <dimen name="smaller_textsize">10sp</dimen>
+    <dimen name="small_textsize">11sp</dimen>
+    <dimen name="medium_below_textsize">12sp</dimen>
+    <dimen name="medium_textsize">13sp</dimen>
+    <dimen name="medium_above_textsize">14sp</dimen>
+    <dimen name="big_textsize">15sp</dimen>
+    <dimen name="bigger_textsize">16sp</dimen>
+    <dimen name="biggest_textsize">17sp</dimen>
+    <dimen name="bigger_than_biggest_textsize">18sp</dimen>
+    <dimen name="large_textsize">19sp</dimen>
+    <dimen name="larger_text_size">20sp</dimen>
+    <dimen name="largest_text_size">20sp</dimen>
+    <dimen name="arrow_size">18dp</dimen>
+    <dimen name="shift_orders_margins">30dp</dimen>
+    <dimen name="very_large_text_size">25sp</dimen>
+    <dimen name="vertical_bar_height">15dp</dimen>
+
+    <dimen name="wheel_picker_height">150dp</dimen>
+    <dimen name="dialog_padding">12dp</dimen>
+
+    <dimen name="image_height_shift_details">130dp</dimen>
+    <dimen name="linear_height_shift_details">30dp</dimen>
+    <dimen name="offer_your_shift_btn_width">150dp</dimen>
+    <dimen name="horizontal_list_height">70dp</dimen>
+    <dimen name="pic_height">40dp</dimen>
+
+</resources>

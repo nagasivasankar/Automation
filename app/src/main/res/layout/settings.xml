@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F9"
+    android:orientation="vertical">
+
+    <include layout="@layout/home_toolbar_layout" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:tag="@string/mallory_light"
+        android:text="Calendar"
+        android:textAllCaps="true"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/medium_textsize" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/light_gray_2" />
+
+    <LinearLayout
+        android:id="@+id/showCalendarLL"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="@string/mallory_book_regular"
+            android:text="Show Schedule on Calendar"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/medium_textsize" />
+
+        <TextView
+            android:id="@+id/switchTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/ic_next_black"
+            android:drawableTint="@color/light_gray_2"
+            android:tag="@string/mallory_book_regular"
+            android:text="On"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/medium_textsize" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/light_gray_2" />
+
+</LinearLayout>

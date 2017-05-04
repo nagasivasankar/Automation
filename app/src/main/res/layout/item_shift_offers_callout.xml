@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingLeft="10dp"
+    android:paddingRight="10sp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_callout_shift_offers_top_rounded_corners"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <ImageView
+            android:id="@+id/shiftTypeIV"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_open_shift" />
+
+        <TextView
+            android:id="@+id/shiftTypeNameTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:tag="@string/mallory_book_regular"
+            android:text="CALLOUT"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_above_textsize" />
+
+        <TextView
+            android:id="@+id/shiftExpireTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="@string/mallory_book_Italic"
+            android:text="Expires in 5 hrs"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_above_textsize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_shift_offers_rounded_corners"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:paddingTop="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/subDayLayout"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/dayViewLL"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dayNameTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:tag="@string/mallory_medium_regular"
+                    android:text="MON"
+                    android:textSize="@dimen/medium_above_textsize"
+                    android:textColor="#424242" />
+
+                <TextView
+                    android:id="@+id/dateTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:tag="@string/mallory_medium_regular"
+                    android:text="5"
+                    android:textSize="@dimen/bigger_than_biggest_textsize"
+                    android:textColor="#424242" />
+
+                <ImageView
+                    android:id="@+id/statusImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_sun_early_morning"
+                    android:layout_marginBottom="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/lineView"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="#FAB817" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/startShiftTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_blue_top_one_corner"
+                android:gravity="left"
+                android:padding="5dp"
+                android:tag="@string/mallory_light"
+                android:text="Started in 45 Mins"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/medium_below_textsize"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/statTimeTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="@string/mallory_light"
+                        android:text="6:00am"
+                        android:textAllCaps="false"
+                        android:textColor="#424242"
+                        android:textSize="@dimen/medium_below_textsize" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        android:background="@android:color/black" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/durationTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="@string/mallory_book"
+                            android:textColor="#424242"
+                            android:text="3"
+                            android:textSize="@dimen/medium_below_textsize" />
+
+                        <TextView
+                            android:id="@+id/hrsTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="@string/mallory_book_regular"
+                            android:text="HRS"
+                            android:textColor="#787B7F"
+                            android:textSize="@dimen/smallest_textsize" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        android:background="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/endTimeTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="@string/mallory_light"
+                        android:text="9:00am"
+                        android:textAllCaps="false"
+                        android:textColor="#424242"
+                        android:textSize="@dimen/medium_below_textsize" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
+
+                    <TextView
+                        android:id="@+id/roleTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="@string/mallory_book"
+                        android:text="BARISTA"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textSize="@dimen/medium_textsize" />
+
+                    <TextView
+                        android:id="@+id/nameTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:tag="@string/mallory_light"
+                        android:text="Philz Coffee"
+                        android:textColor="#6E4B4C"
+                        android:textSize="@dimen/medium_textsize" />
+
+                    <TextView
+                        android:id="@+id/dayOfTheWeekTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="@string/mallory_light"
+                        android:textSize="@dimen/medium_textsize"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/addressTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="9dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:tag="@string/mallory_book_regular"
+                        android:text="300 Folasom"
+                        android:textColor="#424242"
+                        android:textSize="@dimen/medium_textsize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:tag="@string/mallory_light"
+                            android:text="Est."
+                            android:textAllCaps="false"
+                            android:textColor="#6E4B4C"
+                            android:textSize="@dimen/medium_textsize" />
+
+                        <TextView
+                            android:id="@+id/amountTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="@string/mallory_book"
+                            android:text="$66"
+                            android:textAllCaps="true"
+                            android:textColor="#66BB6A"
+                            android:textSize="@dimen/medium_textsize" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="center"
+                        android:id="@+id/thumbImage"
+                        android:src="@drawable/ic_like_green" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

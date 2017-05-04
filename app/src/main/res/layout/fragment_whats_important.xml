@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/whatsParentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_gray_color" />
+
+    <LinearLayout
+        android:id="@+id/workingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/workingCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:button="@drawable/check_selected_mdpi"
+            android:gravity="center_vertical"
+            android:paddingRight="5dp"
+            android:src="@drawable/check_selected_mdpi"
+            app:civ_border_color="#CBCBDF"
+            app:civ_border_width="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="@string/mallory_mediuem"
+                android:text="@string/workingWith"
+                android:textColor="#53555F"
+                android:textSize="@dimen/medium_above_textsize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="@string/mallory_book_Italic"
+                android:text="@string/coworkers"
+                android:textColor="#A6AAA9"
+                android:textSize="@dimen/medium_above_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/consistentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="0.4dp"
+        android:layout_marginRight="0.4dp"
+        android:background="@drawable/bg_white_boarder"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/consistentCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:gravity="center"
+            android:padding="0dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/check_selected_mdpi"
+            app:civ_border_color="#CBCBDF"
+            app:civ_border_width="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:orientation="vertical"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="@string/mallory_mediuem"
+                android:text="@string/consistent"
+                android:textColor="#53555F"
+                android:textSize="@dimen/medium_above_textsize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="@string/mallory_book_Italic"
+                android:text="@string/makingSure"
+                android:textColor="#A6AAA9"
+                android:textSize="@dimen/medium_above_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/verityLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/verityCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:button="@drawable/checkbox"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:src="@drawable/check_selected_mdpi"
+            app:civ_border_color="#CBCBDF"
+            app:civ_border_width="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="@string/mallory_mediuem"
+                android:text="@string/Variety"
+                android:textColor="#53555F"
+                android:textSize="@dimen/medium_above_textsize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="@string/mallory_book_Italic"
+                android:text="@string/workingWithDifferent"
+                android:textColor="#A6AAA9"
+                android:textSize="@dimen/medium_above_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/flexlayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="0.4dp"
+        android:layout_marginRight="0.4dp"
+        android:background="@drawable/bg_white_boarder"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/flexCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:button="@drawable/checkbox"
+            android:gravity="center"
+            android:padding="0dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/check_selected_mdpi"
+            app:civ_border_color="#CBCBDF"
+            app:civ_border_width="1dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="@string/mallory_mediuem"
+                android:text="@string/Flexibility"
+                android:textColor="#53555F"
+                android:textSize="@dimen/medium_above_textsize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="@string/mallory_book_Italic"
+                android:text="@string/Accommodating"
+                android:textColor="#A6AAA9"
+                android:textSize="@dimen/medium_above_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

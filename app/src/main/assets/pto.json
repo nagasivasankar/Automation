@@ -1,0 +1,60 @@
+{
+    "responseStatus": "SUCCESS",
+    "operationStatus": null,
+    "errorString": null,
+    "ptoInformation": [
+        {
+            "worker": {
+                "externalId": null,
+                "firstName": "Oudan",
+                "lastName": "Peng",
+                "email": "oudan@legion.co",
+                "phoneNumber": "650-759-4883",
+                "address1": null,
+                "address2": null,
+                "city": "1235523",
+                "state": "Alaska",
+                "zip": "94042",
+                "memberId": "e21a36e6-c4b2-49e0-b67e-59d0a91cbfb9",
+                "pictureUrl": "https://res.cloudinary.com/legiontech/image/upload/v1481157841/lmj6qml2bxlspmfy3glw.png",
+                "status": null,
+                "role": null,
+                "startEngagementDate": 0
+            },
+            "business": {
+                "externalId": "SQUARE~05A9KRAGFZWA_LT_01",
+                "enterpriseName": null,
+                "enterpriseId": null,
+                "name": "SF Mission St",
+                "address": "1161 Mission St, San Francisco, CA, 94103",
+                "businessId": "a94b83a0-dc8c-41db-a1be-1fb6577319a8",
+                "googlePlacesId": "4dce2ed8-18eb-4a80-b905-6d18c7394d56"
+            },
+            "year": 2016,
+            "weekStartDayOfTheYear": 290,
+            "slot": [
+                {
+                    "dayOfTheWeek": 6,
+                    "startMinutes": 960,
+                    "endMinutes": 1440,
+                    "positiveFlag": false,
+                    "isPTO": true
+                },
+                {
+                    "dayOfTheWeek": 4,
+                    "startMinutes": 0,
+                    "endMinutes": 1440,
+                    "positiveFlag": false,
+                    "isPTO": true
+                },
+                {
+                    "dayOfTheWeek": 5,
+                    "startMinutes": 0,
+                    "endMinutes": 840,
+                    "positiveFlag": false,
+                    "isPTO": true
+                }
+            ]
+        }
+    ]
+}

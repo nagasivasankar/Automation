@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+
+    <color name="colorPrimary">#242365</color>
+
+    <color name="colorPrimaryDark">#242365</color>
+
+    <color name="colorSetupWizard">#242365</color>
+
+    <color name="colorAccent">#242365</color>
+
+    <color name="colorwelcome">#6e4b4c</color>
+
+    <color name="colorOrange">#ff7c00</color>
+
+    <color name="colorGrey">#202020</color>
+
+    <color name="errorRedColor">#DE1919</color>
+
+    <color name="textViewColor">#53585F</color>
+
+    <color name="forgotpwdColor">#363E6E</color>
+
+    <color name="purple">#232465</color>
+
+    <color name="lightpurple">#CBCBDF</color>
+
+    <color name="spinnerTextColor">#0087E3</color>
+
+    <color name="transparent">#73ffffff</color>
+
+    <color name="imagedeletion">#9595A1</color>
+
+    <color name="seekbar_end_color">#E0E1EA</color>
+
+    <color name="blue">#ffffff</color>
+
+    <color name="notificationTextColor">#484848</color>
+
+    <color name="underLine">#BDC4D1</color>
+
+    <color name="hint_color">#989D9C</color>
+
+    <color name="gray_text_color">#A6AAA9</color>
+
+    <color name="black">#000000</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="light_gray">#dcdcdc</color>
+
+    <color name="line_gray">#DDDEE0</color>
+
+    <color name="dark_purple">#3c496c</color>
+
+    <color name="violet">#242365</color>
+
+    <color name="yellow">#FAB817</color>
+
+    <color name="light_blue">#157EFB</color>
+
+    <color name="light_black">#424242</color>
+
+    <color name="light_yellow">#EEAB0A</color>
+
+    <color name="brown">#6E4B4C</color>
+
+    <color name="dark_yash">#444444</color>
+
+    <color name="light_white">#EEEFF9</color>
+
+    <color name="swap_text_color">#A2A5A9</color>
+
+    <color name="light_gray_2">#B0B1B3</color>
+
+    <color name="green">#66BB6A</color>
+
+    <color name="light_purple">#EEEFF9</color>
+
+    <color name="light_brown">#535855</color>
+
+    <color name="dark_skyblue">#157EFB</color>
+
+    <color name="light_yash">#B5B8BB</color>
+
+    <color name="slider_bubble_color">#53585F</color>
+
+    <color name="blue_color">#0087E3</color>
+
+    <color name="very_light_gray">#F5F5F9</color>
+
+    <color name="line_gray_color">#DFE0E5</color>
+
+    <color name="line__dark_ornage_color">#F57C00</color>
+
+    <color name="banner_color_violet">#4C5EC4</color>
+
+    <color name="banner_blue_color">#00A7B6</color>
+
+    <color name="transparent_color">#fcfafa</color>
+
+    <color name="selcted_time_color">#CACCE8</color>
+
+    <color name="openshift_offer_bg">#0097A7</color>
+
+    <color name="swapshift_offer_bg">#4C5EC4</color>
+
+    <color name="callout_offer_bg">#F66404</color>
+
+    <color name="offers_bg">#E1E3FA</color>
+
+    <color name="offers_divider">#E1E3FA</color>
+
+    <color name="find_shift_text_highlight_blue">#242365</color>
+
+    <color name="find_shift_lable_bg">#c9c9f3</color>
+
+    <color name="find_shift_text_black">#53585e</color>
+
+    <color name="find_shift_text_light_black">#b7b8c8</color>
+
+    <color name="time_indicator_cr">#157EFB</color>
+
+</resources>

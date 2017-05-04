@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_white_card"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/weekDateTV"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"
+        android:background="@drawable/bg_blue_date"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="15dp"
+        android:tag="@string/mallory_book"
+        android:text="Sep 25\n-\nSep 27"
+        android:textColor="@color/white"
+        android:textSize="@dimen/big_textsize" />
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#E0E1E5"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="2"
+        android:gravity="left"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/scheduleWeekTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_schedule_past"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:tag="@string/mallory_book"
+                android:text=" THIS WEEK"
+                android:textColor="#E0E1E5"
+                android:textSize="@dimen/medium_below_textsize" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/customRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="false"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:stepSize="1.0"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/star1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_star_selected" />
+
+                <ImageView
+                    android:id="@+id/star2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_star_selected" />
+
+                <ImageView
+                    android:id="@+id/star3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_star_selected" />
+
+                <ImageView
+                    android:id="@+id/star4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_star_selected" />
+
+                <ImageView
+                    android:id="@+id/star5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_star_selected" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/businessName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            android:tag="@string/mallory_book"
+            android:text="Philz Coffee"
+            android:textColor="#6E4B4C"
+            android:textSize="@dimen/medium_below_textsize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="7dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/businessAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:tag="@string/mallory_book"
+                android:text="3191 Middlefield"
+                android:layout_marginRight="10dp"
+                android:textColor="#424242"
+                android:layout_marginBottom="10dp"
+                android:textSize="@dimen/medium_below_textsize" />
+
+            <TextView
+                android:id="@+id/newTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_orange_new"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:tag="@string/mallory_book"
+                android:text="NEW"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

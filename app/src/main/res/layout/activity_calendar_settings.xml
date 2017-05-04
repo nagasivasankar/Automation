@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F9"
+    android:orientation="vertical">
+
+    <include layout="@layout/home_toolbar_layout" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:tag="@string/mallory_book_regular"
+        android:text="SHOW SCHEDULE ON CALENDAR"
+        android:textAllCaps="true"
+        android:textColor="@color/textViewColor"
+        android:textSize="@dimen/medium_textsize" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/light_gray_2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:minHeight="40dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="@string/mallory_book_regular"
+            android:text="Enable"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/medium_textsize" />
+
+        <Switch
+            android:id="@+id/enableSwitch"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:checked="false"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textOff=""
+            android:textOn=""
+            android:thumb="@drawable/switch_bg"
+            android:track="@drawable/switch_track" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/light_gray_2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:tag="@string/mallory_book_regular"
+        android:text="Legion will push your shifts to your device calendar."
+        android:textAllCaps="false"
+        android:textColor="@color/textViewColor"
+        android:textSize="@dimen/medium_below_textsize" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:tag="@string/mallory_book_regular"
+        android:text="OPTIONS"
+        android:textAllCaps="true"
+        android:textColor="@color/textViewColor"
+        android:textSize="@dimen/medium_textsize" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/light_gray_2" />
+
+    <LinearLayout
+        android:id="@+id/selectCalendarLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/seelctCalLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:tag="@string/mallory_book_regular"
+                android:text="Select Calendar"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/medium_textsize" />
+
+            <TextView android:id="@+id/selectedcalendarNameTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/ic_next_black"
+                android:gravity="center_vertical|right"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:tag="@string/mallory_book_regular"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/medium_textsize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/light_gray_2" />
+
+        <LinearLayout
+            android:id="@+id/alertLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:tag="@string/mallory_book_regular"
+                android:text="Alert"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/medium_textsize" />
+
+            <TextView
+                android:id="@+id/minutesTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/ic_next_black"
+                android:gravity="center_vertical|right"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:tag="@string/mallory_book_regular"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/medium_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/light_gray_2" />
+</LinearLayout>

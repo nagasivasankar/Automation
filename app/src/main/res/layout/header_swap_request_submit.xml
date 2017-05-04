@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/headerParentLayout"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:tag="@string/mallory_medium_regular"
+        android:text="ADD A MESSAGE"
+        android:layout_marginLeft="15dp"
+        android:textAllCaps="true"
+        android:textColor="#53585F"
+        android:textSize="@dimen/medium_above_textsize" />
+
+    <ui.ActionEditText
+        android:id="@+id/cmtTextEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_with_corners"
+        android:hint=""
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:imeOptions="actionDone"
+        android:maxLines="4"
+        android:padding="20dp"
+        android:tag="@string/mallory_book_regular"
+        android:textColor="@color/hint_color"
+        android:textSize="@dimen/big_textsize" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/seekbar_end_color" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:tag="@string/mallory_medium_regular"
+        android:text="review your requested swaps"
+        android:textAllCaps="true"
+        android:textColor="#53585F"
+        android:textSize="@dimen/medium_above_textsize" />
+</LinearLayout>

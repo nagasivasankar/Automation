@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogParentLayout"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/rounded_shape_all_corners"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/msgTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:tag="@string/mallory_book"
+        android:text="You are still responsible for covering your shift."
+        android:textColor="@color/light_black"
+        android:textSize="15dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_text_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/okTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/textview_rounded_corner_bottom"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="12dp"
+            android:tag="@string/mallory_book"
+            android:text="OK"
+            android:textColor="@color/textViewColor"
+            android:textSize="@dimen/big_textsize" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

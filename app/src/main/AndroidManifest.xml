@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.legion.client">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+
+    <application
+        android:name="app.LegionApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_legion_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.LegionSplashActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.LoginActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.WelcomeScreenActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.OnBoardingActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name=".activities.HomeActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.UpdateProfileActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name=".activities.NotificationActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.UpdateWorkPreferencesActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.UpdateAvailabilityActivityNew"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.OfferYourShiftActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.LegionTermsActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.PreviewInScheduleActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.SwapRequestListActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.ShiftRequestSubmitActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.OpenShiftOfferDetailsActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.CalloutShiftOfferDetailsActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.SwapShiftOfferDetailsActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.PrivacyPolicyActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.ScheduleShiftDetailsActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.ShiftDropRequestSubmitActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.ShiftSwapSucessActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.VerifyIdentityActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.ShiftDropSucessActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SwapRequestedStatusActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CreateAccountActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CalendarSettingsActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SelectCalendarActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AlertActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+
+        <service android:name="services.TokenService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name="recievers.FCMMessageReceiverService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!--<meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="bf0e3052be780613ef730b8ff670bc486bb574e8" />OLD API KEY-->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="ae77fa9fe3ba39801741ffb15e47d75d94d12f67" />
+
+    </application>
+</manifest>

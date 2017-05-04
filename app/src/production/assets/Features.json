@@ -1,0 +1,8 @@
+{
+    "feature.calendarIntegration.enabled": false,
+    "feature.offerYourShift.enabledForBusinessName": "Minnesota (Mock),Hyatt,Front,SF Mission St",
+    "feature.dropShift.enabledForBusinessName": "Minnesota (Mock),Hyatt,Front,SF Mission St",
+    "feature.shiftSwapRequestScreen.enabled": true,
+    "feature.appsee.enabled": true,
+    "feature.legalScreens.enabled": false
+}

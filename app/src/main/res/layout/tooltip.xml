@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolTipLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9000000"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingTop="50dp"
+    android:paddingBottom="50dp"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:paddingRight="15dp"
+    android:visibility="gone">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:tag="@string/mallory_book"
+        android:text="Tips for setting availability"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/biggest_textsize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.2"
+            android:gravity="left|top"
+            android:lineSpacingExtra="3dp"
+            android:text="Tap once to select a pre-defined time slot."
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_above_textsize" />
+
+        <ImageView
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:scaleType="fitEnd"
+            android:layout_weight="0.8"
+            android:adjustViewBounds="true"
+            android:src="@drawable/tap_once" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:src="@drawable/tapandslide_1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="top"
+            android:layout_marginLeft="10dp"
+            android:lineSpacingExtra="3dp"
+            android:tag="@string/mallory_book"
+            android:text="Tap and slide to set an extended period of availability…"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_above_textsize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:lineSpacingExtra="3dp"
+            android:tag="@string/mallory_book"
+            android:text="And to shorten or lengthen existing available hours."
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_above_textsize" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="1dp"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:src="@drawable/tapandslide_2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|left"
+            android:layout_marginTop="2dp"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_taphold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="top"
+            android:lineSpacingExtra="3dp"
+            android:tag="@string/mallory_book"
+            android:layout_marginLeft="10dp"
+            android:text="Touch to view options to Delete or Customize your available hours"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_above_textsize" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/gotItTv"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/login_button_shape"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:tag="@string/mallory_book"
+        android:text="Got it"
+        android:textColor="@color/white"
+        android:textSize="@dimen/bigger_textsize" />
+
+</LinearLayout>

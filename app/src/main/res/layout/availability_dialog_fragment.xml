@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_without_stroke"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gray_top_two_corner"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/customTitleTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:tag="@string/mallory_book"
+                android:text="Customize"
+                android:gravity="left"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/biggest_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/line_gray_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="7dp"
+        android:paddingLeft="@dimen/dialog_padding"
+        android:paddingRight="@dimen/dialog_padding"
+        android:paddingTop="18dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:tag="@string/mallory_medium_regular"
+            android:text="SET START AND END TIMES"
+            android:textColor="@color/light_brown"
+            android:textSize="@dimen/medium_below_textsize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_wheel_picker"
+                android:orientation="vertical">
+
+                <cn.jeesoft.widget.pickerview.CharacterPickerView
+                    android:id="@+id/left_wheel_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="2dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:tag="@string/mallory_medium_regular"
+                android:text="TO"
+                android:textColor="@color/light_brown"
+                android:textSize="@dimen/medium_below_textsize" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_wheel_picker"
+                android:orientation="vertical">
+
+                <cn.jeesoft.widget.pickerview.CharacterPickerView
+                    android:id="@+id/right_wheel_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="2dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:tag="@string/mallory_medium_regular"
+            android:text="SELECT DAYS TO APPLY THIS TIME TO"
+            android:textColor="@color/light_brown"
+            android:textSize="@dimen/medium_below_textsize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_weeks"
+            android:orientation="horizontal"
+            android:padding="0.5dp">
+
+            <TextView
+                android:id="@+id/tv_monday"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:tag="@string/mallory_medium_regular"
+                android:text="M"
+                android:textColor="@color/light_yash"
+                android:textSize="@dimen/medium_textsize" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#c9cad2" />
+
+            <TextView
+                android:id="@+id/tv_tuesday"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:tag="@string/mallory_medium_regular"
+                android:text="T"
+                android:textColor="@color/light_yash"
+                android:textSize="@dimen/medium_textsize" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#c9cad2" />
+
+            <TextView
+                android:id="@+id/tv_wednesday"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:tag="@string/mallory_medium_regular"
+                android:text="W"
+                android:textColor="@color/light_yash"
+                android:textSize="@dimen/medium_textsize" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#c9cad2" />
+
+            <TextView
+                android:id="@+id/tv_thursday"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:tag="@string/mallory_medium_regular"
+                android:text="T"
+                android:textColor="@color/light_yash"
+                android:textSize="@dimen/medium_textsize" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#c9cad2" />
+
+            <TextView
+                android:id="@+id/tv_friday"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="15dp"
+                android:tag="@string/mallory_medium_regular"
+                android:text="F"
+                android:textColor="@color/light_yash"
+                android:textSize="@dimen/medium_textsize" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#c9cad2" />
+
+            <TextView
+                android:id="@+id/tv_saturday"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:tag="@string/mallory_medium_regular"
+                android:text="S"
+                android:textColor="@color/light_yash"
+                android:textSize="@dimen/medium_textsize" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#c9cad2" />
+
+            <TextView
+                android:id="@+id/tv_sunday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="15dp"
+                android:tag="@string/mallory_medium_regular"
+                android:text="S"
+                android:textColor="@color/light_yash"
+                android:textSize="@dimen/medium_textsize" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c9cad2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="15dp"
+            android:tag="@string/mallory_book_regular"
+            android:text="CANCEL"
+            android:textColor="@color/light_brown"
+            android:textSize="@dimen/medium_textsize" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#c9cad2" />
+
+        <TextView
+            android:id="@+id/tv_apply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="15dp"
+            android:tag="@string/mallory_medium_regular"
+            android:text="APPLY"
+            android:textColor="@color/light_brown"
+            android:textSize="@dimen/medium_textsize" />
+
+    </LinearLayout>
+
+</LinearLayout>

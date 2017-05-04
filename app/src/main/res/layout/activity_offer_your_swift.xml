@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/very_light_gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/home_toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_white_with_corners"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/subDayLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/dayViewLL"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dayNameTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:tag="@string/mallory_medium_regular"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:id="@+id/statusImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <include
+            layout="@layout/past_schedule_row_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/swapLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:drawableRight="@drawable/double_arrow"
+            android:tag="@string/mallory_medium_regular"
+            android:text="@string/request_swap_yourshift"
+            android:textColor="@color/textViewColor"
+            android:textSize="@dimen/big_textsize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="5dp"
+            android:tag="@string/mallory_book_Italic"
+            android:text="@string/with_trade_text"
+            android:textColor="@color/gray_text_color"
+            android:textSize="@dimen/medium_above_textsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dropLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/seekbar_end_color" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:drawableRight="@drawable/double_arrow"
+            android:tag="@string/mallory_medium_regular"
+
+            android:text="@string/request_to_drop_your_shift"
+            android:textColor="@color/textViewColor"
+            android:textSize="@dimen/big_textsize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="5dp"
+            android:tag="@string/mallory_book_Italic"
+            android:text="@string/without_a_trade_text"
+            android:textColor="@color/gray_text_color"
+            android:textSize="@dimen/medium_above_textsize" />
+    </LinearLayout>
+</LinearLayout>

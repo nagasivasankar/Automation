@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">Legion</string>
+    <string name="emailAddress">Email address</string>
+    <string name="emailError">Please enter a valid email address</string>
+    <string name="usernameError">Please enter a  username</string>
+    <string name="passwordError">Please enter a valid password</string>
+    <string name="phoneError">Please enter a valid phone number</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="emailpwderror">Email and password don\'t match</string>
+    <string name="notificationText">Specify how you\'d like to be notified  when a new schedule is published, an open shift is available, or there\’s a change in your schedule.</string>
+    <string name="forgot_password">Forgot your password? </string>
+    <string name="address">1258 Minnesota St.
+        San Francisco,
+        CA 94107</string>
+    <string name="lastUpdated">Last updated October 28, 2016</string>
+
+    <string name ="usernameAllowedDigits">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.-_</string>
+    <string name="termsTitle">Some Unusually Long Header</string>
+    <string name="termsPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Curabitur turpis felis, dignissim et massa nec, maximus consequat enim.
+        Quisque tempus, odio in pharetra pretium,
+        ligula dolor facilisis justo, ut eleifend ex tortor ac est.
+        Donec sapien odio, maximus non consequat non, viverra non odio.</string>
+    <string name="pushNotifications">Push notifications</string>
+    <string name="sms">SMS</string>
+    <string name="emailToggleText">Email</string>
+    <string name="letsgetstarted">Let\'s get started!</string>
+    <string name="welcomeMessage">Welcome, .\n Some other text that makes \n more sense with this design.</string>
+    <string name="terms">By using Legion you agree to our <u>Privac</u>y<u> Polic</u>y and <u>Terms of Service</u>.</string>
+    <string name="next">NEXT</string>
+    <string name="skip">PREVIOUS</string>
+    <string name="start">GOT IT</string>
+    <string name="whatsnew">What\'s new</string>
+    <string name="personalizeText">Personalize it with a photo!</string>
+    <string name="toggleText">I’d like to receive Shift Offers from nearby</string>
+    <string name="optiontowork">option to work at different locations</string>
+    <string name="coworkers">Co-workers and customers</string>
+    <string name="makingSure">Making sure my basic expenses are covered every month</string>
+    <string name="workingWithDifferent">Working with different people at different locations</string>
+    <string name="Variety">Variety</string>
+    <string name="consistent">A consistent paycheck</string>
+    <string name="Accommodating">Accommodating my schedule that changes from week to week</string>
+    <string name="Flexibility">Flexibility</string>
+    <string name="workingWith">Working with people I like</string>
+    <string name="firstName">Firstname</string>
+    <string name="lastName">Lastname</string>
+    <string name="nickName">Nickname</string>
+    <string name="phone">Phone</string>
+    <string name="Address">Address</string>
+    <string name="StreetAddres">Street Address</string>
+    <string name="city">City</string>
+    <string name="zipcode">Zip Code</string>
+    <string name="email">Email address</string>
+    <string name="shiftLength">Shift Length</string>
+    <string name="hoursWeeks">Hours/Week</string>
+    <string name="shiftsWeeks">Shifts/Week</string>
+    <string name="mallory_book">mallory_book</string>
+    <string name="mallory_book_regular">mallory_book_regular</string>
+    <string name="when_i_prefer">When I prefer to work</string>
+    <string name="usually">When I\'m usually busy</string>
+    <string name="whats_imp">What\'s important to me</string>
+    <string name="how_i_work">How I like to work</string>
+    <string name="complete_my_profile">Complete my Profile</string>
+    <string name="mallory_mediuem">mallory_mediuem</string>
+    <string name="mallory_book_Italic">mallory_book_Italic</string>
+    <string name="device_offline_alert_message">You\'re offline. Please verify your connection and try again.</string>
+    <string name="shift_start_message">Your next shift starts</string>
+    <string name="schedules">Schedules</string>
+    <string name="messages">Messages</string>
+    <string name="shift_offers">Shift Offers</string>
+    <string name="whats_new">What\'s new,</string>
+    <string name="profile">Profile</string>
+    <string name="availability">Availability</string>
+    <string name="work_preferences">Work Preferences</string>
+    <string name="notifi_settings">Settings</string>
+    <string name="about_legion">About Legion</string>
+    <string name="logout">Logout</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="callouts">CALLOUTS</string>
+    <string name="swaps">SWAPS</string>
+    <string name="open_shifts">OPEN SHIFTS</string>
+    <string name="text_callout">callout</string>
+    <string name="text_open_shift">open shift</string>
+    <string name="text_shift_swap">shift swap</string>
+    <string name="unclaimed_offers">Unclaimed Offers</string>
+    <string name="new_offers">New Offers</string>
+    <string name="my_pending_offers">My Pending Offers</string>
+    <string name="my_approved_offers">My Approved Offers</string>
+    <string name="my_rejected_offers">My Rejected Offers</string>
+    <string name="my_bookmarks">My Bookmarks</string>
+
+    <string name="mallory_light">mallory_light</string>
+    <string name="mallory_bold">mallory_bold</string>
+    <string name="mallory_black">mallory_black</string>
+    <string name="mallory_extra_light">mallory_extra_light</string>
+    <string name="mallory_thin">mallory_thin</string>
+    <string name="mallory_ultra">mallory_thin</string>
+    <string name="sf_ui_disply_semi_bold">sf_ui_disply_semi_bold</string>
+    <string name="sf_ui_text_semi_bold">sf_ui_text_semi_bold</string>
+    <string name="proximaNovaCond_Regular">ProximaNovaCond_Regular</string>
+    <string name="proximaNovaCond_SemiBold">ProximaNovaCond_SemiBold</string>
+    <string name="proximaNovaCond_Medium">ProximaNovaCond_Medium</string>
+    <string name="mallory_medium_regular">MalloryMediumRegular</string>
+
+    <string name="request_swap_yourshift">Request to Swap your Shift</string>
+    <string name="with_trade_text">You can view and select comparable shifts that you can ask to trade</string>
+    <string name="request_to_drop_your_shift">Request to Drop your Shift</string>
+    <string name="without_a_trade_text">You can offer your shift—without a trade—to available team members.</string>
+    <string name="drop_request">Your Drop Request was successfully submitted!</string>
+    <string name="drop_req_text">Until you receive confirmation that a Shift Drop has been approved, you are still responsible for covering your shift.</string>
+    <string name="swap_req_text">Until you receive confirmation that a Shift Swap has been approved, you are still responsible for covering your shift.</string>
+    <string name="swap_req_sucess">Your Swap Request was successfully submitted!</string>
+
+    <string name="page_text">Hello,Wendy! You\'re in.\n Only one more step left.</string>
+    <string name="erroremail_text">Please enter a valid email address</string>
+    <string name="errorpwd_text">6 or more characters</string>
+    <string name="verifyinvite_text">Please enter your name and the code included in your Legion SMS invite.</string>
+    <string name="splash_text">SCHEDULING FOR PHILZ \n COFFEE</string>
+    <string name="createaccount">CREATE \n AN ACCOUNT</string>
+    <string name="login_splash">LOGIN</string>
+    <string name="monday">monday</string>
+    <string name="tuesday">tuesday</string>
+    <string name="wednesday">wednesday</string>
+    <string name="thursday">thursday</string>
+    <string name="friday">friday</string>
+    <string name="saturday">saturday</string>
+    <string name="sunday">sunday</string>
+    <string name="appsee_id">f1ad3053bad4465fb5251199be707e32</string>
+    <string name="terms_of_service"><![CDATA[By clicking \'Create my account\', you agree to \n the Legion <u>Privacy Policy</u> and <u>Terms of Service</u>.]]></string>
+</resources>

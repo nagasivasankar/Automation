@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorSetupWizard"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/closeSetup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@null"
+                    android:padding="10dp"
+                    android:src="@drawable/dismiss" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:tag="@string/mallory_book"
+                    android:text="My Availability"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/biggest_textsize" />
+
+                <TextView
+                    android:id="@+id/saveAvailability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:tag="@string/mallory_light"
+                    android:text="Save"
+                    android:textColor="@color/swap_text_color"
+                    android:textSize="@dimen/big_textsize" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/whenIPreferToWork"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/ic_availability_on"
+                android:gravity="center"
+                android:padding="8dp"
+                android:tag="@string/proximaNovaCond_SemiBold"
+                android:text="When I prefer to work"
+                android:textColor="@color/violet"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/line_gray_color" />
+
+            <TextView
+                android:id="@+id/whenIamBusy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/unavailability_off"
+                android:gravity="center"
+                android:padding="8dp"
+                android:tag="@string/proximaNovaCond_Medium"
+                android:text="When I'm busy"
+                android:textColor="#A2A5A9"
+                android:textSize="12sp" />
+
+            <!--     <View
+                     android:layout_width="1dp"
+                     android:layout_height="match_parent"
+                     android:background="@color/line_gray_color" />
+     -->
+            <!-- <TextView
+                 android:id="@+id/customAvailability"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="5.5"
+                 android:drawablePadding="5dp"
+                 android:drawableTop="@drawable/ic_custom_availability_off"
+                 android:gravity="center"
+                 android:padding="8dp"
+                 android:tag="@string/proximaNovaCond_Medium"
+                 android:text="Custom Availability"
+                 android:textColor="@color/light_gray_2"
+                 android:textSize="12sp" />-->
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_gray_color" />
+
+        <LinearLayout
+            android:id="@+id/weekNavigatorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECECF2"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:id="@+id/prevIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_back_black" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/headerDateTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:tag="@string/mallory_book"
+                    android:text="OCT 3 - OCT 9"
+                    android:textColor="#31397C"
+                    android:textSize="@dimen/big_textsize" />
+
+                <ImageView
+                    android:id="@+id/lockImage"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_lock"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/nextIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_next_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/container1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/container2"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/tooltip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</RelativeLayout>

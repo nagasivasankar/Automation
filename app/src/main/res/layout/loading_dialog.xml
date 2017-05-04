@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialogParentLayout"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_shape_all_corners"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:minHeight="150dp"
+        android:id="@+id/processingLL"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:indicatorName="LineSpinFadeLoaderIndicator"
+            app:indicatorColor="@color/black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:id="@+id/message"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:tag="@string/mallory_book_regular"
+            android:text="Processing your offer claim..."
+            android:textColor="#757777"
+            android:textSize="@dimen/medium_textsize" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayoutWork"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/rangebars"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_marginLeft="0.4dp"
+        android:layout_marginRight="0.4dp"
+        android:background="@drawable/bg_white_boarder"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F9"
+            android:gravity="left"
+            android:tag="@string/mallory_mediuem"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="2dp"
+            android:text="@string/optiontowork"
+            android:textSize="@dimen/medium_below_textsize"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Switch
+                android:id="@+id/locationSwitch"
+                android:textOff=""
+                android:textOn=""
+                android:layout_gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:checked="false"
+                android:thumb="@drawable/switch_bg"
+                android:track="@drawable/switch_track" />
+
+            <ToggleButton
+                android:visibility="gone"
+                android:id="@+id/locationToggle"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/toggle_selector"
+                android:checked="false"
+                android:text="@string/toggleText"
+                android:textColor="@color/transparent"
+                android:textSize="0dp" />
+
+            <TextView
+                android:id="@+id/toggleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:tag="@string/mallory_book" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

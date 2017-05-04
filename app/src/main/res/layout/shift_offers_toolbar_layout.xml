@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/titleLayout"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:tag="@string/mallory_book_regular"
+            android:text="Unclaimed Offers"
+            android:textColor="@color/white"
+            android:textSize="@dimen/biggest_textsize" />
+
+        <ImageView
+            android:tag="Closed"
+            android:id="@+id/iv_open_close_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_down_arrow_white" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>
